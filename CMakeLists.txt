@@ -4,7 +4,7 @@ include(googletest.cmake)
 
 SET(COVERAGE OFF CACHE BOOL "Coverage")
 
-add_executable(test tests/mediator_unittests.cc)
+add_executable(test tests/unittests.cc)
 
 find_package (Threads)
 target_link_libraries(test gtest ${CMAKE_THREAD_LIBS_INIT})
